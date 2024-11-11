@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+/* input::-ms-clear {
+	display: none;
+} */
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+/*--------------------*/
+/* <!-- Подключение шрифтов: Google fonts plagin  дописать в конце "&display=swap" --> */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Secular+One&display=swap');
+
+/* HTML: <div class="box"><sh></sh> </div> */
+
+
+
+.container {
+
+	position: relative;
+	background-color: #c7c4c4;
+	min-height: 100%;
+}
+
+.item {
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 10rem;
+	/* background-color: rgba(219, 196, 50, 0.578); */
+	transform: translate(-50%, -50%);
+	text-align: center;
+	min-width: 100%;
+	text-shadow: 0px 0px 30px white;
+}
+
+.image-container {
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	background-color: rgba(239, 155, 155, 0.218);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.input-form__container {
+	display: flex;
+	flex-direction: row;
+	grid-row: 30px;
+	justify-content: center;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	bottom: 0;
+	gap: 20px;
+	padding: 50px;
+	border: 2px solid rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(3px);
+	border-radius: 40px 40px 0 0;
+}
+
+.search__query {
+	padding: 5px;
+	align-self: center;
+	margin-left: 20px;
+	padding-left: 10px;
+	border: 2px solid rgba(0, 0, 0, 0.3);
+	background-color: inherit;
+	background-color: hsla(0, 3%, 77%, 0.15);
+	transition: all 0.4s ease;
+}
+
+.search__query:focus {
+	border: 2px solid rgba(0, 0, 0, 0.7);
+	background-color: hsla(0, 3%, 77%, 0.3);
+	transition: all 0.4s ease;
+
+}
+
+.search__butoon {
+	align-self: center;
+	background-color: #464646;
+	padding: 5px;
+	border-radius: 5px;
+	transition: all 0.4s ease;
+	color: aliceblue;
+
+}
+
+.search__butoon:hover {
+	transition: all 0.3s ease;
+	background-color: hsla(0, 3%, 77%, 0.3);
+	color: black;
+	border: 1px solid black;
+}
